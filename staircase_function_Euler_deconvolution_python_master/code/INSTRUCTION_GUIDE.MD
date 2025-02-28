@@ -1,6 +1,6 @@
 # Variable regularization degrees in processing aeromagnetic data with first-order derivatives to improve geological mapping and automatic depth estimates
 
-by Janaína A. Melo (IAG-USP), Carlos A. Mendonça (IAG-USP) and Yara R. Marangoni (IAG-USP) (2023)
+by Janaína A. Melo (IAG-USP), Carlos A. Mendonça (IAG-USP) and Yara R. Marangoni (IAG-USP) (2025)
 
 Email: janaina.melo@usp.br (J.A. Melo); carlos.mendonca@iag.usp.br (C.A. Mendonça); yaramaran@usp.br. (Y.R. Marangoni)
 
@@ -24,7 +24,7 @@ This repository contains several Python codes and synthetic data examples for a 
 
 1 - Abstract
 ----------------------
-The evaluation of numerical derivatives serves as the basis of several techniques applied to magnetic data processing to map structural trends and determine depth estimates for the associated magnetic sources. This differential operation is unstable, since amplifying the high-frequency content of the observed anomaly. Regularized derivatives based on Tikhonov regularization have been proposed to balance the oscillatory property of the numerical derivatives at the cost of incorporating a certain smoothing degree as determined by a particular choice for the associated regularization parameter. We apply a graphical procedure to select the regularization parameter for different transformations requiring first-order derivatives, by normalizing the L2-norm of transformed fields for trial regularization parameters. This approach produces a characteristic staircase function ranging from 0 to 1, respectively from subtle to over-regularized conditions, the ramp between the two end-term steps better trading-off noise amplification with smoothed outputs. As illustrated with synthetic and real data applications, a proper choice for the regularization parameter at the ramp interval can be made according to general properties of the transformed outputs (with oscillations or not) or inconsistency for depth to the top estimates, for example when inferring magnetic sources above the ground surface or at stratigraphic levels incompatible with a priori geological information. For grid operations, a mild regularization dose at the staircase ramp seems enough to produce reliable products, better centring fields over sources meanwhile preventing noise amplification. Real data application for the intracontinental Transbrasiliano shear-zone corridor, revealed that moderate regularization is necessary to obtain depth estimates consistent with independent geological and geophysical information.  
+The evaluation of numerical derivatives serves as the basis of several techniques applied to magnetic data processing to map structural trends and determine depth estimates for the associated magnetic sources. This differential operation is unstable, since amplifying the high-frequency content of the observed anomaly. Regularized derivatives based on Tikhonov regularization have been proposed to balance the oscillatory property of unstable numerical derivatives at the cost of incorporating a certain smoothing degree as determined by a particular choice for the associated regularization parameter. We use a graphical method to select appropriate regularization parameters for various transformations that require first-order derivatives by normalizing the L2-norm of transformed fields for different trial regularization parameters. This approach produces a characteristic staircase function ranging from 0 to 1, respectively assigning subtle to over-regularized conditions. As illustrated with synthetic and real data applications, a proper choice for the regularization parameter can be made according to general properties of the transformed outputs or inconsistency for depth to the top estimates, for example when inferring magnetic sources above the ground surface or at stratigraphic levels incompatible with a priori geological information. To obtain depth estimates from grid operations, a moderate regularization is necessary to achieve consistent results. Data application for the Transbrasiliano shear-zone corridor demonstrated that low-dose regularization is essential to achieve depth estimates that align with independent geological and geophysical data; the non-regularized results provided inconsistent depth estimates.
 
 
 2 - Content
@@ -146,7 +146,7 @@ distributed under the following license agreement:
 
 MIT license
 
-Copyright (c) 2023 Janaína A. Melo, Carlos A. Mendonça and Yara R. Marangoni.
+Copyright (c) 2025 Janaína A. Melo, Carlos A. Mendonça and Yara R. Marangoni.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
