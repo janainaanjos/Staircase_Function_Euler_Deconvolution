@@ -4,7 +4,7 @@ Plot functions
 A Python program to plot the total-field anomaly, non-regularized and regularized ASA, non-regularized and regularized TDR, the S-function, depth
 histograms, and map of the solutions Euler.
 
-This code plot the figures 1, 2, 3, and 4 of the synthetic data in the folder 'figures'.
+This code plots the figures 1, 2, 3, and 4 of the synthetic data in the folder 'figures'.
 
 This code is released from the paper: "Variable regularization degrees in processing aeromagnetic data with first-order derivatives to 
 improve geological mapping and automatic depth estimates".
